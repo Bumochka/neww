@@ -1,0 +1,62 @@
+<!-- Index.html  -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <!-- Linking css file  -->
+    <link rel="stylesheet" href="a.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <!-- Creating the form container  -->
+    <div class="containerr">
+        <h1>Опрос по тесту</h1>
+
+        <!-- Contains error -->
+        <h4 id="errorText"></h4>
+        
+        <!-- Form element  -->
+        <form id="surveyForm">
+
+            <label for="name">
+                Имя:
+            </label><br>
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   required><br>
+
+            <label for="age">
+                На сколько прошли тест:
+            </label><br>
+            <input type="number" 
+                   id="age" 
+                   name="age" 
+                   required><br>
+
+            <label for="feedback">
+                Пожелания по улучшению сайта: 
+            </label><br>
+            <input type="textarea" 
+                   id="feedback" 
+                   name="feedback"><br>
+
+
+
+            <button type="submit">
+                отправить
+            </button>
+        </form>
+    </div>
+
+    <!-- linking javascript file  -->
+    <script src="a.js"></script>
+</body>
+
+</html>
